@@ -58,9 +58,6 @@ This is a simple web application for playing the classic game of Rock Paper Scis
 - Determines the winner of the game based on user and computer selections.
 - Renders different components based on the game outcome (draw, player win, or computer win).
 
-## Styling
-
-The application is styled using CSS, with responsive design considerations to ensure compatibility across different screen sizes.
 
 ## Screenshots
 
