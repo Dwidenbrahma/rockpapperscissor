@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+# Rock Paper Scissors Game
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple web application for playing the classic game of Rock Paper Scissors against the computer. The game is built using React.js.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Features](#features)
+- [How to Play](#how-to-play)
+- [Components](#components)
+- [Styling](#styling)
+- [Screenshots](#screenshots)
+- [Installation and Setup](#installation-and-setup)
+- [Technologies Used](#technologies-used)
+- [Author](#author)
+- [License](#license)
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Gameplay**: Choose between Rock, Paper, or Scissors and see the result of your choice against the computer.
+- **Score Keeping**: Keep track of your score as you play.
+- **Modal Rules**: Access the rules of the game through a modal window.
+- **Responsive Design**: The application is designed to be responsive and can be played on various devices.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## How to Play
 
-### `npm test`
+1. Choose your move by clicking on one of the icons (Rock, Paper, or Scissors) on the game board.
+2. The computer will randomly select its move.
+3. The result of the game will be displayed, and your score will be updated accordingly.
+4. You can view the rules of the game by clicking on the "Rules" button.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Components
 
-### `npm run build`
+### App.js
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- The main component that orchestrates the game.
+- Manages state related to the score, user selection, and modal visibility.
+- Renders other components like the game board, score container, and rule modal.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Board.js
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Renders the game board with options to select Rock, Paper, or Scissors.
+- Passes user selection to the parent component.
 
-### `npm run eject`
+### Modals.js
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Renders a modal window displaying the rules of the game.
+- Allows users to close the modal window.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Select.js
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Handles the logic for the game outcome.
+- Generates a random move for the computer.
+- Determines the winner and updates the score.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### WhoWin.js
 
-## Learn More
+- Determines the winner of the game based on user and computer selections.
+- Renders different components based on the game outcome (draw, player win, or computer win).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Styling
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The application is styled using CSS, with responsive design considerations to ensure compatibility across different screen sizes.
 
-### Code Splitting
+## Screenshots
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![Screenshot 1](screenshots/screenshot1.png)
+![Screenshot 2](screenshots/screenshot2.png)
+![Screenshot 3](screenshots/screenshot3.png)
+![Screenshot 4](screenshots/screenshot4.png)
 
-### Analyzing the Bundle Size
+## Installation and Setup
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+To run the application locally:
 
-### Making a Progressive Web App
+1. Clone this repository to your local machine.
+2. Navigate to the project directory in your terminal.
+3. Run `npm install` to install dependencies.
+4. Run `npm start` to start the development server.
+5. Open your browser and navigate to `http://localhost:3000` to view the application.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Technologies Used
 
-### Advanced Configuration
+- React.js
+- CSS
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Author
 
-### Deployment
+[Dwiden Brahma]
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
