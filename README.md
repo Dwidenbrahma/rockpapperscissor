@@ -1,6 +1,7 @@
 # Rock Paper Scissors Game
 
 This is a simple web application for playing the classic game of Rock Paper Scissors against the computer. The game is built using React.js.
+## Live Link [https://dwidenbrahma.github.io/rockpapperscissor/]
 
 ## Table of Contents
 
