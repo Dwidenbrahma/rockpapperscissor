@@ -88,4 +88,7 @@ To run the application locally:
 
 [Dwiden Brahma]
 
-## License
+## UPCOMMING...............!
+
+Upcoming updates will include multiplayer functionality.
+
